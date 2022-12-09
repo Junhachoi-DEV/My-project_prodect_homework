@@ -34,7 +34,7 @@ public class player_move : MonoBehaviour
     
     void Update()
     {
-        if (manager.is_menu_show)
+        if (manager.is_menu_show || manager.is_f_menu)
         {
             return;
         }

@@ -9,9 +9,10 @@ public class game_manager : MonoBehaviour
     //public static game_manager manager;
 
     public GameObject menu;
+    public GameObject f_menu_back;
     public RectTransform f_menu;
 
-    bool is_f_menu;
+    public bool is_f_menu;
     public bool is_menu_show = true;
 
     
@@ -41,7 +42,7 @@ public class game_manager : MonoBehaviour
         is_menu_show = !is_menu_show;
     }
 
-    void show_f_menu()
+    public void show_f_menu()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -50,11 +51,17 @@ public class game_manager : MonoBehaviour
         if (is_f_menu)
         {
             f_menu.anchoredPosition = Vector2.zero;
+            f_menu_back.SetActive(true);
         }
         else
         {
             f_menu.anchoredPosition = Vector2.down * 680;
+            f_menu_back.SetActive(false);
         }
+    }
+    public void show_f_around()
+    {
+        is_f_menu = !is_f_menu;
     }
 
     void mouse_show()

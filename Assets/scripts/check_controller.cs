@@ -8,7 +8,7 @@ public class check_controller : MonoBehaviour
 
     public int check_distance;
 
-    private bool is_press_f_show;
+    public bool is_press_f_show;
 
     public GameObject press_f_butten;
 
