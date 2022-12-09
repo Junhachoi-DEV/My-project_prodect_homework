@@ -9,13 +9,16 @@ public class game_manager : MonoBehaviour
     //public static game_manager manager;
 
     public GameObject menu;
+    public RectTransform f_menu;
 
+    bool is_f_menu;
     public bool is_menu_show = true;
 
     
     private void Update()
     {
         show_menu();
+        show_f_menu();
         mouse_show();
         if (is_menu_show)
         {
@@ -33,9 +36,30 @@ public class game_manager : MonoBehaviour
             is_menu_show = !is_menu_show;
         }
     }
+    public void show_around()
+    {
+        is_menu_show = !is_menu_show;
+    }
+
+    void show_f_menu()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            is_f_menu = !is_f_menu;
+        }
+        if (is_f_menu)
+        {
+            f_menu.anchoredPosition = Vector2.zero;
+        }
+        else
+        {
+            f_menu.anchoredPosition = Vector2.down * 680;
+        }
+    }
+
     void mouse_show()
     {
-        if (is_menu_show)
+        if (is_menu_show || is_f_menu)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -46,10 +70,7 @@ public class game_manager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
-    public void show_around()
-    {
-        is_menu_show = !is_menu_show;
-    }
+
     public void exit_game()
     {
         Application.Quit();
