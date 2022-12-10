@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class check_controller : MonoBehaviour
 {
@@ -10,9 +11,20 @@ public class check_controller : MonoBehaviour
 
     public bool is_press_f_show;
 
-    public GameObject press_f_butten;
+    public float in_time;
+    public float max_in_time =2;
 
+    public GameObject _3second_ui_obj;
     
+
+    [SerializeField]
+    Image _3s_img;
+    game_manager g_manager;
+
+    private void Start()
+    {
+        g_manager = FindObjectOfType<game_manager>();
+    }
     void Update()
     {
         if (check_obj())
@@ -21,13 +33,16 @@ public class check_controller : MonoBehaviour
             if(hit_info.transform.tag == "inter")
             {
                 is_press_f_show = true;
-                press_f_butten.SetActive(true);
+                _3second_ui_obj.SetActive(true);
+                look_on();
             }
         }
         else
         {
+            _3s_img.fillAmount = 0;
+            in_time = 0;
             is_press_f_show = false;
-            press_f_butten.SetActive(false);
+            _3second_ui_obj.SetActive(false);
         }
     }
 
@@ -39,5 +54,21 @@ public class check_controller : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    void look_on()
+    {
+        
+        if(_3s_img.fillAmount < 1 && !g_manager.is_f_menu)
+        {
+            in_time += Time.deltaTime / max_in_time;
+            _3s_img.fillAmount = in_time;
+        }
+        else
+        {
+            g_manager.is_f_menu = true;
+            _3s_img.fillAmount = 0;
+            in_time = 0;
+        }
     }
 }
