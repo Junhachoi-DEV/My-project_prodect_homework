@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class game_manager : MonoBehaviour
 {
-    //public static game_manager manager;
+    
 
     public GameObject menu;
     public GameObject f_menu_back;
@@ -20,7 +20,18 @@ public class game_manager : MonoBehaviour
 
     public bool is_menu_show = true;
 
-    
+    public static game_manager manager
+    {
+        get
+        {
+            if(manager == null)
+            {
+                return null;
+            }
+            return manager;
+        }
+    }
+
     private void Update()
     {
         show_menu();
@@ -57,6 +68,7 @@ public class game_manager : MonoBehaviour
         {
             f_menu.anchoredPosition = Vector2.zero;
             f_menu_back.SetActive(true);
+            //dd();
         }
         else
         {
@@ -65,7 +77,13 @@ public class game_manager : MonoBehaviour
         }
     }
 
-    
+    void dd()
+    {
+        if (check_controller.c_controller.hit_info.transform.name == "effect_intro")
+        {
+            Debug.Log("it's working");
+        }
+    }
 
     public void show_f_around()
     {

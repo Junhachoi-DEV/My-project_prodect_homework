@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class check_controller : MonoBehaviour
 {
-    RaycastHit hit_info;
+    //private static check_controller c_controller = null;
+    public RaycastHit hit_info;
 
     public int check_distance;
 
@@ -20,16 +21,25 @@ public class check_controller : MonoBehaviour
     Image _3s_img;
     game_manager g_manager;
 
-    private void Start()
+    public static check_controller c_controller
     {
-        g_manager = FindObjectOfType<game_manager>();
+        get
+        {
+            if(null== c_controller)
+            {
+                return null;
+            }
+            return c_controller;
+        }
     }
+
     void Update()
     {
         if (check_obj())
         {
-            Debug.Log(hit_info);
-            if(hit_info.transform.tag == "inter")
+            Debug.Log(hit_info.transform.name);
+            Debug.Log(hit_info.transform.tag);
+            if (hit_info.transform.tag == "inter")
             {
                 is_press_f_show = true;
                 _3second_ui_obj.SetActive(true);
@@ -65,7 +75,7 @@ public class check_controller : MonoBehaviour
         }
         else
         {
-            g_manager.is_f_menu = true;
+            game_manager.manager.is_f_menu = true;
             _3s_img.fillAmount = 0;
             in_time = 0;
         }
