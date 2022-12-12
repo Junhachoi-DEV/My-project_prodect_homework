@@ -16,7 +16,7 @@ public class game_manager : MonoBehaviour
     
 
     public bool is_f_menu;
-    bool[] is_texts; 
+    //bool[] is_texts; 
 
     public bool is_menu_show = true;
 
@@ -83,7 +83,21 @@ public class game_manager : MonoBehaviour
         {
             if (check.hit_info.transform.name == "effect_intro")
             {
-                Debug.Log("it's working");
+                text_list[0].SetActive(true);
+                text_list[1].SetActive(false);
+                text_list[2].SetActive(false);
+            }
+            if (check.hit_info.transform.name == "effect_explain")
+            {
+                text_list[0].SetActive(false);
+                text_list[1].SetActive(true);
+                text_list[2].SetActive(false);
+            }
+            if (check.hit_info.transform.name == "effect_sung_le_moon")
+            {
+                text_list[0].SetActive(false);
+                text_list[1].SetActive(false);
+                text_list[2].SetActive(true);
             }
         }
     }

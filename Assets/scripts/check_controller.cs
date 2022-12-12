@@ -32,8 +32,8 @@ public class check_controller : MonoBehaviour
     {
         if (check_obj())
         {
-            Debug.Log(hit_info.transform.name);
-            Debug.Log(hit_info.transform.tag);
+            //Debug.Log(hit_info.transform.name);
+            //Debug.Log(hit_info.transform.tag);
             if (hit_info.transform.tag == "inter")
             {
                 is_press_f_show = true;
