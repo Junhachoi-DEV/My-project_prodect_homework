@@ -21,17 +21,12 @@ public class check_controller : MonoBehaviour
     Image _3s_img;
     game_manager g_manager;
 
-    public static check_controller c_controller
+    private void Start()
     {
-        get
-        {
-            if(null== c_controller)
-            {
-                return null;
-            }
-            return c_controller;
-        }
+        g_manager = FindObjectOfType<game_manager>();
     }
+    //public static check_controller c_controller;
+    
 
     void Update()
     {
@@ -55,7 +50,7 @@ public class check_controller : MonoBehaviour
         }
     }
 
-    bool check_obj()
+    public bool check_obj()
     {
         // 캐릭터의 위치에 생성, 방향, 닿은것의 정보값 넣기, 거리
         if (Physics.Raycast(transform.position, transform.forward, out hit_info, check_distance))
@@ -75,7 +70,7 @@ public class check_controller : MonoBehaviour
         }
         else
         {
-            game_manager.manager.is_f_menu = true;
+            g_manager.is_f_menu = true;
             _3s_img.fillAmount = 0;
             in_time = 0;
         }

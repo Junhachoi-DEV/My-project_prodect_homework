@@ -20,16 +20,16 @@ public class game_manager : MonoBehaviour
 
     public bool is_menu_show = true;
 
-    public static game_manager manager
+    //public static game_manager manager => manager;
+    // 오류남. 이유는 두개 A 함수에서 B를 호출하는데, B에서 A를 호출하면
+    // A->B->A->B->A->B->A->B->A->B->A->B->A->B->A->B->A->B->A->B-> ...
+    // 이렇게 호출하다 보면 Stack Frame을 만들어주기 위한.
+    // 호출스택이 꽉 차서 StackOverflow가 발생.
+    check_controller check;
+
+    private void Start()
     {
-        get
-        {
-            if(manager == null)
-            {
-                return null;
-            }
-            return manager;
-        }
+        check = FindObjectOfType<check_controller>();
     }
 
     private void Update()
@@ -68,7 +68,7 @@ public class game_manager : MonoBehaviour
         {
             f_menu.anchoredPosition = Vector2.zero;
             f_menu_back.SetActive(true);
-            //dd();
+            check_effects();
         }
         else
         {
@@ -77,11 +77,14 @@ public class game_manager : MonoBehaviour
         }
     }
 
-    void dd()
+    void check_effects()
     {
-        if (check_controller.c_controller.hit_info.transform.name == "effect_intro")
+        if (check.check_obj())
         {
-            Debug.Log("it's working");
+            if (check.hit_info.transform.name == "effect_intro")
+            {
+                Debug.Log("it's working");
+            }
         }
     }
 
