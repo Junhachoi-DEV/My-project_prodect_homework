@@ -15,7 +15,6 @@ public class check_controller : MonoBehaviour
     public float max_in_time =2;
 
     public GameObject _3second_ui_obj;
-    
 
     [SerializeField]
     Image _3s_img;
@@ -70,5 +69,6 @@ public class check_controller : MonoBehaviour
             _3s_img.fillAmount = 0;
             in_time = 0;
         }
+        
     }
 }

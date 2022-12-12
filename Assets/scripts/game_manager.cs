@@ -12,7 +12,12 @@ public class game_manager : MonoBehaviour
     public GameObject f_menu_back;
     public RectTransform f_menu;
 
+    public GameObject[] text_list;
+    
+
     public bool is_f_menu;
+    bool[] is_texts; 
+
     public bool is_menu_show = true;
 
     
@@ -59,6 +64,9 @@ public class game_manager : MonoBehaviour
             f_menu_back.SetActive(false);
         }
     }
+
+    
+
     public void show_f_around()
     {
         is_f_menu = !is_f_menu;
