@@ -79,25 +79,32 @@ public class game_manager : MonoBehaviour
 
     void check_effects()
     {
+        
         if (check.check_obj())
         {
-            if (check.hit_info.transform.name == "effect_intro")
+            
+            for(int i=0; i<text_list.Length; i++)
             {
-                text_list[0].SetActive(true);
-                text_list[1].SetActive(false);
-                text_list[2].SetActive(false);
-            }
-            if (check.hit_info.transform.name == "effect_explain")
-            {
-                text_list[0].SetActive(false);
-                text_list[1].SetActive(true);
-                text_list[2].SetActive(false);
-            }
-            if (check.hit_info.transform.name == "effect_sung_le_moon")
-            {
-                text_list[0].SetActive(false);
-                text_list[1].SetActive(false);
-                text_list[2].SetActive(true);
+                if (check.hit_info.transform.name == "effect_intro")
+                {
+                    text_list[i].SetActive(false);
+                    text_list[0].SetActive(true);
+                }
+                else if(check.hit_info.transform.name == "effect_explain")
+                {
+                    text_list[i].SetActive(false);
+                    text_list[1].SetActive(true);
+                }
+                else if (check.hit_info.transform.name == "effect_explain2")
+                {
+                    text_list[i].SetActive(false);
+                    text_list[2].SetActive(true);
+                }
+                else if (check.hit_info.transform.name == "effect_sung_le_moon")
+                {
+                    text_list[i].SetActive(false);
+                    text_list[3].SetActive(true);
+                }
             }
         }
     }
