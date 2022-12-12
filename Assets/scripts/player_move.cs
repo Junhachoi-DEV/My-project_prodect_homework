@@ -99,7 +99,7 @@ public class player_move : MonoBehaviour
     void do_jump()
     {
         is_ground = Physics.Raycast(transform.position, Vector3.down, capsule.bounds.extents.y + 0.1f);
-        if (Input.GetButtonDown("Jump") && is_ground)
+        if (Input.GetKeyDown(KeyCode.Space) && is_ground)
         {
             rigid.velocity = transform.up * jump_force;
         }
