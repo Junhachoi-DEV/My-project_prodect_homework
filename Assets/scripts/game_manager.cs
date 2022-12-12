@@ -10,6 +10,7 @@ public class game_manager : MonoBehaviour
 
     public GameObject menu;
     public GameObject f_menu_back;
+    public GameObject f_menu_obj;
     public RectTransform f_menu;
 
     public GameObject[] text_list;
@@ -67,12 +68,14 @@ public class game_manager : MonoBehaviour
         if (is_f_menu)
         {
             f_menu.anchoredPosition = Vector2.zero;
+            f_menu_obj.SetActive(true);
             f_menu_back.SetActive(true);
             check_effects();
         }
         else
         {
             f_menu.anchoredPosition = Vector2.down * 680;
+            f_menu_obj.SetActive(false);
             f_menu_back.SetActive(false);
         }
     }
