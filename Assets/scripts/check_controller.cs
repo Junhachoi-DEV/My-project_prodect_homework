@@ -63,7 +63,7 @@ public class check_controller : MonoBehaviour
     public bool check_effect_obj()
     {
         // 캐릭터의 위치에 생성, 방향, 닿은것의 정보값 넣기, 거리
-        if (Physics.Raycast(_camera.transform.position, _camera.transform.forward, out hit_info2, check_distance * 3))
+        if (Physics.Raycast(_camera.transform.position, _camera.transform.forward, out hit_info2, check_distance * 2))
         {
             return true;
         }

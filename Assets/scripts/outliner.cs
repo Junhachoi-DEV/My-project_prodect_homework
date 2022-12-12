@@ -25,13 +25,12 @@ public class outliner : MonoBehaviour
     {
         if (check.check_effect_obj())
         {
-            
-
             materialList.Clear();
             materialList.AddRange(renderers.sharedMaterials);
             materialList.Add(outline);
 
             renderers.materials = materialList.ToArray();
+
         }
         else
         {
