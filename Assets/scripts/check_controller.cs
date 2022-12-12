@@ -7,6 +7,7 @@ public class check_controller : MonoBehaviour
 {
     //private static check_controller c_controller = null;
     public RaycastHit hit_info;
+    public RaycastHit hit_info2;
 
     public int check_distance;
 
@@ -16,7 +17,7 @@ public class check_controller : MonoBehaviour
     public float max_in_time =2;
 
     public GameObject _3second_ui_obj;
-
+    public Camera _camera;
     [SerializeField]
     Image _3s_img;
     game_manager g_manager;
@@ -53,7 +54,16 @@ public class check_controller : MonoBehaviour
     public bool check_obj()
     {
         // 캐릭터의 위치에 생성, 방향, 닿은것의 정보값 넣기, 거리
-        if (Physics.Raycast(transform.position, transform.forward, out hit_info, check_distance))
+        if (Physics.Raycast(_camera.transform.position, _camera.transform.forward, out hit_info, check_distance))
+        {
+            return true;
+        }
+        return false;
+    }
+    public bool check_effect_obj()
+    {
+        // 캐릭터의 위치에 생성, 방향, 닿은것의 정보값 넣기, 거리
+        if (Physics.Raycast(_camera.transform.position, _camera.transform.forward, out hit_info2, check_distance * 3))
         {
             return true;
         }
