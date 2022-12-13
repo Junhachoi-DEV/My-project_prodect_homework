@@ -12,3 +12,5 @@
 <img src="https://user-images.githubusercontent.com/87477736/207313457-ea631e28-4472-4ae7-9f58-d8c521fb5143.png" width="210" height="297"/> 박동연  
   
 ## 게임
+<img src="user-images.githubusercontent.com/87477736/207320095-3435a3ba-4266-4639-b763-2028c130c196.PNG" width="840" height="637"/>  
+
