@@ -1,6 +1,7 @@
 # My-project_prodect_homework
 ## 프로젝트 소개
 수업: 프로덕트 디자인  
+  
 -팀 과제-  
 제품으로 게임을 만들면 어떨까라는 생각으로 프로젝트를 진행.  
   
@@ -22,3 +23,10 @@
 ![Desktop Screenshot 2022 12 13 - 21 18 45 15 (2)](https://user-images.githubusercontent.com/87477736/207321554-25abf988-f68e-4a38-9820-6bb880499d7e.png)  
 ![Desktop Screenshot 2022 12 13 - 21 18 35 41 (2)](https://user-images.githubusercontent.com/87477736/207321564-ea311924-47f3-4d59-83cc-d788e2ccedae.png)  
 ![Desktop Screenshot 2022 12 13 - 21 19 44 93 (2)](https://user-images.githubusercontent.com/87477736/207321786-af165e37-eebb-465e-9ded-35bb2e16ba09.png)  
+
+## 배운점 및 느낀점
+1. Raycast에 대해서 자세히 배웠다.  
+2. Unity UI를 응용할 수 있었다.
+3. Unity Occlusion culling 에 대해서 배울수 있었다.
+4. 
+5. 숭례문에 대해서 알게됐다.
