@@ -8,7 +8,7 @@
 우리 문화재를 통해 가상현실(AR, VR)로 그 시대당시의 모습을 보여주는 기기 제작.  
 거기에 들어가는 인게임 요소를 프로토타입으로 보여주는 프로젝트  
 ## 참고 자료
-[3D상상포털](https://www.3dbank.or.kr/)  https://www.3dbank.or.kr/
+[3D상상포털](https://www.3dbank.or.kr/) : https://www.3dbank.or.kr/
   
 ## 제품
 <img src="https://user-images.githubusercontent.com/87477736/207313065-a0d010c2-ba76-4a6c-80e6-5d7100f7ee3a.png" width="210" height="297"/> 지민섭
@@ -27,6 +27,5 @@
 ## 배운점 및 느낀점
 1. Raycast에 대해서 자세히 배웠다.  
 2. Unity UI를 응용할 수 있었다.
-3. Unity Occlusion culling 에 대해서 배울수 있었다.
-4. 
-5. 숭례문에 대해서 알게됐다.
+3. Unity Occlusion culling 에 대해서 배울수 있었다. >>ㅇㄹㅇㄹ
+4. 숭례문에 대해서 알게됐다.
