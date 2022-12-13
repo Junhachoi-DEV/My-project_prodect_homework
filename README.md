@@ -27,5 +27,5 @@
 ## 배운점 및 느낀점
 1. Raycast에 대해서 자세히 배웠다.  
 2. Unity UI를 응용할 수 있었다.
-3. Unity Occlusion culling 에 대해서 배울수 있었다. >>ㅇㄹㅇㄹ
+3. Unity Occlusion culling 에 대해서 배울수 있었다.  -
 4. 숭례문에 대해서 알게됐다.
