@@ -12,7 +12,7 @@
 1. Raycast에 대해서 자세히 배웠다.  
 2. Unity UI를 응용할 수 있었다.
 3. Unity Occlusion culling 에 대해서 배울수 있었다.
-4. 숭례문에 대해서 알게됐다.
+4. 숭례문에 대해서 자세히 알게됐다.
 
 ## 참고 자료
 [3D상상포털](https://www.3dbank.or.kr/) : https://www.3dbank.or.kr/
