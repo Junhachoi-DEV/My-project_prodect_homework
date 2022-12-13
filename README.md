@@ -8,5 +8,5 @@
 거기에 들어가는 인게임 요소를 프로토타입으로 보여주는 프로젝트  
 
 ## 제품
-![KakaoTalk_20221213_095017220](https://user-images.githubusercontent.com/87477736/207313065-a0d010c2-ba76-4a6c-80e6-5d7100f7ee3a.png)  
-![KakaoTalk_20221213_095017855](https://user-images.githubusercontent.com/87477736/207313457-ea631e28-4472-4ae7-9f58-d8c521fb5143.png)  
+<img src="https://user-images.githubusercontent.com/87477736/207313065-a0d010c2-ba76-4a6c-80e6-5d7100f7ee3a.png" width="200" height="400"/>  
+<img src="https://user-images.githubusercontent.com/87477736/207313457-ea631e28-4472-4ae7-9f58-d8c521fb5143.png" width="200" height="400"/>  
