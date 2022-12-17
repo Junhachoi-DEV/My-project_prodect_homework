@@ -19,7 +19,7 @@
 <img src="https://user-images.githubusercontent.com/87477736/207403610-c8cc637f-0b75-4806-b843-6a571d260af1.png" width="210" height="297"/> 지민섭
 <img src="https://user-images.githubusercontent.com/87477736/207313457-ea631e28-4472-4ae7-9f58-d8c521fb5143.png" width="210" height="297"/> 박동연  
   
-<img src="https://user-images.githubusercontent.com/87477736/207405455-96c42baf-9c6a-491a-96b0-855847ab765f.png" width="210" height="297"/> 최준하(본인)  
+<img src="https://user-images.githubusercontent.com/87477736/208234890-4260a96f-a9f4-4516-8659-17b20ba64c4d.jpg" width="210" height="297"/> 최준하(본인)  
   
 <img src="https://user-images.githubusercontent.com/87477736/208178983-46966240-fa7e-4e2b-8515-c75beb35ee23.jpg" width="210" height="297"/> 
 
